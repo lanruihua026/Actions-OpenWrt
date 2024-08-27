@@ -15,8 +15,9 @@ git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 # remove conflict plugins
 rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 
-sed -i '/^UBOOT_TARGETS := rk3528-evb rk3588-evb/s/^/#/' package/boot/uboot-rk35xx/Makefile
 
+git clone https://github.com/EOYOHOO/UA2F.git package/UA2F
+git clone https://github.com/EOYOHOO/rkp-ipid.git package/rkp-ipid
 
 
 # Modify default IP
